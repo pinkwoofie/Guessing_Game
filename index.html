@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>guessing game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="https://pinkwoofie.github.io/BMI_Calculator/">BMI Calculator</a>
+    </nav>
+
+    <h1>Number Guessing Game</h1>
+
+    <div id="wrapper">
+        
+        <p>Try and guess a random number between 1 and 50.</p>
+        <p>You have 10 attempts to guess the right number.</p>
+
+        <br>
+
+        <form class="form">
+            <label for="guessfield" id="guess">Guess a Number</label>
+            <input type="text" id="guessfield" class="guessfield">
+            <input type="submit" id="sumt" value="Submit Guess" class="guessSubmit">
+        </form>
+
+        <div class="result">
+            <p>Previous Guesses : <span class="guesses"></span></p>
+            <p>Guesses Remaining : <span class="remaining"></span></p>
+            <p class="lowOrHigh"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
